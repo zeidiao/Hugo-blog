@@ -34,8 +34,8 @@ jobs:
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3.6.4
         with:
-          # deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }} # 这里的 ACTIONS_DEPLOY_KEY 则是上面设置 Private Key的变量名
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }} # 这里的 ACTIONS_DEPLOY_KEY 则是上面设置 Private Key的变量名
+          # github_token: ${{ secrets.GITHUB_TOKEN }}
           external_repository: zeidiao/zeidiao.github.io # Pages 远程仓库 
           publish_dir: ./public
           keep_files: false # remove existing files
