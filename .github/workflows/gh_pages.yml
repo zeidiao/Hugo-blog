@@ -30,7 +30,7 @@ jobs:
           hugo-version: ""  #optional, default is latest
           extended: true
       - name: Build
-        run: hugo -D
+        run: hugo
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3.6.4
         with:
