@@ -1,9 +1,9 @@
 baseURL = "https://zmvx.gitee.io/"
 # baseURL = "https://zeidiao.github.io/"
-languageCode = "en"
-defaultContentLanguage = "en"
+languageCode = "zh-cn"
+defaultContentLanguage = "zh-cn"
 title = "贼雕"                         # site title  # 网站标题
-theme = "zozo"
+theme = "hugo-theme-zozo"
 hasCJKLanguage = true                  # has chinese/japanese/korean ?  # 自动检测是否包含 中文\日文\韩文
 summaryLength = 100
 paginate = 4                           # shows the number of articles  # 首页显示文章数量
@@ -22,22 +22,22 @@ pygmentscodefencesguesssyntax = true
   smartypants = false
 
 [[menu.main]]                          # config your menu  # 配置菜单
-  name = "Home"
+  name = "Home" #首页
   weight = 10
   identifier = "home"
   url = "/"
 [[menu.main]]
-  name = "Archive"
+  name = "Archive"  # 归档
   weight = 20
   identifier = "archive"
   url = "/posts/"
 [[menu.main]]
-  name = "Tags"
+  name = "Tags" # 标签
   weight = 30
   identifier = "tags"
   url = "/tags/"
 [[menu.main]]
-  name = "About"
+  name = "About"  # 关于
   weight = 40
   identifier = "about"
   url = "/about/"
@@ -45,8 +45,8 @@ pygmentscodefencesguesssyntax = true
 [params]
   subTitle = "zeidiao, student | developer"                                       # site's subTitle  # 网站二级标题
   footerSlogan = "Be prepared for a long struggle"                                   # site's footer slogan  # 网站页脚标语
-  keywords = ["Hugo","theme","zozo"]                                  # site's keywords  # 网站关键字
-  description = "Hugo theme zozo example site."                        # site's description  # 网站描述
+  keywords = ["zeidiao","贼雕","hugo","威远","白塔小学"]                                  # site's keywords  # 网站关键字
+  description = "贼雕的个人博客,记录我的技术成长路"                        # site's description  # 网站描述
   enableMathJax = true                                                 # enable mathjax  # 是否使用mathjax（数学公式）
   enableSummary = true                                                 # display the article summary  # 是否显示文章摘要
   mainSections = ["posts","post"]
@@ -55,9 +55,11 @@ pygmentscodefencesguesssyntax = true
 # You can get your appid and appkey from https://leancloud.cn
 # more info please open https://valine.js.org
 [params.valine]
-  enable = false
-  appId = "mbBCYOjxHfWnTzhfcvGRDqar-gzGzoHsz"
-  appKey = "5RAGc4sEh4Y2rvYovoedChu5"
+  enable = true
+  # appId = "mbBCYOjxHfWnTzhfcvGRDqar-gzGzoHsz"
+  # appKey = "5RAGc4sEh4Y2rvYovoedChu5"
+  appId = ""
+  appKey = ""
   placeholder = " "
   visitor = true
 

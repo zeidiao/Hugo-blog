@@ -21,8 +21,7 @@ jobs:
           hugo-version: ""  #optional, default is latest
           extended: true
       - name: Build
-        # run: hugo -D
-        run: hugo -D -t zozo --baseURL=https://zeidiao.github.io/
+        run: hugo -D -t zozo --baseURL=https://zeidiao.github.io/ # 编译静态页面文件,-t 指定了主题, --baseURL 指定了站点监听的域名
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3.6.4
         with:
