@@ -22,7 +22,7 @@ jobs:
           extended: true
       - name: Build
         # run: hugo -D
-        run: hugo server -t zozo -D --baseURL=https://zeidiao.github.io/
+        run: hugo -D -t zozo --baseURL=https://zeidiao.github.io/
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3.6.4
         with:
