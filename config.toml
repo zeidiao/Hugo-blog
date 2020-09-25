@@ -1,5 +1,5 @@
-# baseURL = "https://zmvx.gitee.io/"
-baseURL = "https://zeidiao.github.io/"
+baseURL = "https://zmvx.gitee.io/"
+# baseURL = "https://zeidiao.github.io/"
 languageCode = "en"
 defaultContentLanguage = "en"
 title = "贼雕"                         # site title  # 网站标题
@@ -75,3 +75,4 @@ pygmentscodefencesguesssyntax = true
 [markup.goldmark]
 [markup.goldmark.renderer]
   unsafe = true
+
